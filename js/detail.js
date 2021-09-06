@@ -12,6 +12,8 @@ function getDetailCountry(name){
     renderCountry(response.data)
     }).then(function(){
         loading.remove()
+    }).catch(function(error){
+        loading.remove()
     })
 }
 function renderCountry(country){

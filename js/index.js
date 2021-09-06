@@ -10,19 +10,6 @@ const loading = document.querySelector(".loader")
     searchCountry(response.data);
    filterRegion(response.data);
     loading.remove();
-    // .then(function(response){
-    // //     console.log(response.data);
-    
-    // // // searchCountry
-    // // inputSearch.addEventListener('input',function(){
-    // // searchCountry(this.value,response.data)
-    // //     })
-    // //     // // filterRegion
-    // //     inputSelect.addEventListener('change',function(){
-    // //         filterRegion(this.value,response.data);
-    // //      }) 
-    // })
- 
 }
 function hideLoading(){
     loading.remove();
@@ -36,12 +23,8 @@ function searchCountry(arrayCountry){
             while(boxCountry.firstChild){
             boxCountry.removeChild(boxCountry.firstChild)
             }
-
         renderCountry(result);
              })
-            
-  
-  
     }
     // function renderUI 
 function renderCountry(countryData){
